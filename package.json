@@ -1,0 +1,19 @@
+{
+  "name": "algos",
+  "version": "1.0.0",
+  "description": "Test New Edit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yashuvit89/Algos.git"
+  },
+  "author": "yaswanth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yashuvit89/Algos/issues"
+  },
+  "homepage": "https://github.com/yashuvit89/Algos#readme"
+}

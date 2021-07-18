@@ -46,17 +46,17 @@
   }
 }; */
 
-var twoSum = function(nums, target) {
+var twoSum = function (nums, target) {
   let hashMap = nums.reduce((acc, currValue, i) => {
-    acc[currValue] = i;
-    return acc;
-  }, {});
+    acc[currValue] = i
+    return acc
+  }, {})
 
   for (let i = 0; i < nums.length; i++) {
-    let diff = target - nums[i];
-    let value = hashMap[diff];
+    let diff = target - nums[i]
+    let value = hashMap[diff]
     if (value && value !== i) {
-      return [i, hashMap[diff]];
+      return [i, hashMap[diff]]
     }
   }
-};
+}
