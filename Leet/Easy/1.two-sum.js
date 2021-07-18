@@ -47,16 +47,15 @@
 }; */
 
 var twoSum = function (nums, target) {
-  let hashMap = nums.reduce((acc, currValue, i) => {
-    acc[currValue] = i
-    return acc
-  }, {})
+ const map = {}
 
   for (let i = 0; i < nums.length; i++) {
-    let diff = target - nums[i]
-    let value = hashMap[diff]
-    if (value && value !== i) {
-      return [i, hashMap[diff]]
+    const currentNum = nums[i]
+    const anotherOne = target - currentNum 
+    console.log('value check', map[currentNum])
+    if (currentNum in map) {
+      return [ map[currentNum], i]
     }
+    map[anotherOne] = i;
   }
 }
